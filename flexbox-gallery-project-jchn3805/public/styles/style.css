@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: lightsteelblue;
+  background-color: lightblue;
   margin: 60px;
 }
 
@@ -23,32 +23,40 @@ body {
   position: relative;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
-  font-family: "Lato", sans-serif;
-  transition: transform 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Poiret One", cursive;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  width: 300px;
+  width: 350px;
   height: auto;
+  transition: transform 0.5s;
+}
+
+.card img:hover {
+  transform: scale(1.02);
 }
 
 .card h1 {
   text-align: center;
   padding: 10px;
+  font-size: 50px;
 }
 
 .card p {
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .type-water, .type-electric, .type-fire, .type-psychic, .type-normal, .type-dark, .type-grass, .type-ice, .type-fairy {
@@ -64,10 +72,11 @@ body {
 
 .type-water p, .type-electric p, .type-fire p, .type-psychic p, .type-normal p, .type-dark p, .type-grass p, .type-ice p, .type-fairy p {
   font-size: 15px;
+  font-family: "Lato", sans-serif;
 }
 
 .type-water {
-  background-color: blue;
+  background-color: cornflowerblue;
   color: white;
 }
 
@@ -87,7 +96,7 @@ body {
 }
 
 .type-normal {
-  background-color: lightgrey;
+  background-color: lightgray;
   color: black;
 }
 
@@ -97,16 +106,33 @@ body {
 }
 
 .type-grass {
-  background-color: green;
+  background-color: #02bd02;
   color: white;
 }
 
 .type-ice {
-  background-color: lightskyblue;
+  background-color: skyblue;
   color: white;
 }
 
 .type-fairy {
   background-color: pink;
   color: white;
+}
+
+@media (max-width: 1650px) {
+  .card {
+    padding: 35px;
+    margin: 25px;
+  }
+  .card img {
+    width: 260px;
+    height: auto;
+  }
+  .card h1 {
+    font-size: 40px;
+  }
+  .card p {
+    font-size: 16px;
+  }
 }
