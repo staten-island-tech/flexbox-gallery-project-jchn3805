@@ -6,7 +6,7 @@
 
 body {
   background-color: gainsboro;
-  margin: 60px;
+  margin: 5rem;
 }
 
 .container {
@@ -18,8 +18,8 @@ body {
 }
 
 .card {
-  padding: 40px;
-  margin: 30px;
+  padding: 2rem;
+  margin: 2rem;
   position: relative;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -38,31 +38,26 @@ body {
 }
 
 .card img {
-  width: 350px;
+  width: 20rem;
   height: auto;
-  transition: transform 0.5s;
 }
 
-.card img:hover {
-  transform: scale(1.02);
-}
-
-.card h1 {
+.card h2 {
   text-align: center;
-  padding: 10px;
-  font-size: 50px;
+  padding: 0.5rem;
+  font-size: 3em;
 }
 
 .card p {
   text-align: center;
-  font-size: 25px;
+  font-size: 1.25em;
   font-weight: bold;
 }
 
 .type-water, .type-electric, .type-fire, .type-psychic, .type-normal, .type-dark, .type-grass, .type-ice, .type-fairy {
-  margin: 15px;
-  width: 75px;
-  height: 30px;
+  margin: 1rem;
+  width: 4.8rem;
+  height: 1.8rem;
   border-radius: 5px;
   text-align: center;
   display: flex;
@@ -71,7 +66,7 @@ body {
 }
 
 .type-water p, .type-electric p, .type-fire p, .type-psychic p, .type-normal p, .type-dark p, .type-grass p, .type-ice p, .type-fairy p {
-  font-size: 15px;
+  font-size: 0.9em;
   font-family: "Lato", sans-serif;
 }
 
@@ -120,19 +115,19 @@ body {
   color: white;
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1550px) {
   .card {
-    padding: 35px;
-    margin: 25px;
+    padding: 2rem;
+    margin: 1.5rem;
   }
   .card img {
-    width: 260px;
+    width: 90%;
     height: auto;
   }
-  .card h1 {
-    font-size: 40px;
+  .card h2 {
+    font-size: 2.5em;
   }
   .card p {
-    font-size: 16px;
+    font-size: 1em;
   }
 }
