@@ -20,12 +20,14 @@ body {
 .card {
   width: 23rem;
   height: 30rem;
+  // padding: 2rem;
+  margin: 2.5rem;
   perspective: 1000rem;
   transition: transform 0.5s;
 
   &:hover {
     transform: scale(1.01);
-    box-shadow: 0 7px 7px 0 rgba($color: #000000, $alpha: 0.1);
+    // box-shadow: 0 7px 7px 0 rgba($color: #000000, $alpha: 0.1);
   }
 }
 
@@ -166,33 +168,33 @@ body {
   color: white;
 }
 
-@media (max-width: 1550px) {
-  .toggler {
-    width: 100%;
-    height: 100%;
-  }
+// @media (max-width: 1550px) {
+//   .toggler {
+//     width: 100%;
+//     height: 100%;
+//   }
 
-  .card {
-    padding: 2rem;
-    margin: 1.5rem;
+//   .card {
+//     padding: 2rem;
+//     margin: 1.5rem;
 
-    img {
-      width: 100%;
-      height: auto;
-    }
+//     img {
+//       width: 100%;
+//       height: auto;
+//     }
 
-    h2 {
-      font-size: 2.5em;
-    }
+//     h2 {
+//       font-size: 2.5em;
+//     }
 
-    p {
-      font-size: 1.2em;
-    }
-  }
+//     p {
+//       font-size: 1.2em;
+//     }
+//   }
 
-  %type {
-    p {
-      font-size: 1em;
-    }
-  }
-}
+//   %type {
+//     p {
+//       font-size: 1em;
+//     }
+//   }
+// }
