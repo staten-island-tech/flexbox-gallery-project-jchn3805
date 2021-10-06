@@ -18,9 +18,9 @@ body {
 }
 
 .card {
-  width: 23rem;
+  width: 22rem;
   height: 30rem;
-  margin: 2.2rem;
+  margin: 2rem;
   perspective: 1000rem;
   transition: transform 0.5s;
 }
