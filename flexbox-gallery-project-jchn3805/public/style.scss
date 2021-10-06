@@ -17,42 +17,60 @@ body {
   justify-content: center;
 }
 
-.toggler {
-  position: absolute;
-  opacity: 0.3;
-  width: 24rem;
-  height: 34rem;
-  cursor: pointer;
-}
-
 .card {
-  padding: 2rem;
-  margin: 2rem;
-  position: relative;
-  border-radius: 25px;
-  background-color: rgba($color: #fff, $alpha: 0.4);
-  // box-shadow: 5px 5px rgba($color: #000000, $alpha: 0.15);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Poiret One", cursive;
-  // cursor: pointer;
+  width: 23rem;
+  height: 30rem;
+  perspective: 100rem;
   transition: transform 0.5s;
 
   &:hover {
     transform: scale(1.01);
     box-shadow: 0 7px 7px 0 rgba($color: #000000, $alpha: 0.1);
   }
+}
 
+.toggler {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+
+  &:checked ~ .flip-card {
+    transform: rotateY(-180deg);
+  }
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  padding: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #fff, $alpha: 0.4);
+  border-radius: 25px;
+  font-family: "Poiret One", cursive;
+}
+
+.front {
   img {
     width: 20rem;
     height: auto;
-    // transition: transform 0.5s;
-
-    // &:hover {
-    //   transform: scale(1.02);
-    // }
   }
 
   h2 {
@@ -60,6 +78,16 @@ body {
     padding: 0.5rem;
     font-size: 3em;
   }
+
+  p {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+}
+
+.back {
+  transform: rotateY(180deg);
 
   p {
     text-align: center;
@@ -149,7 +177,7 @@ body {
     margin: 1.5rem;
 
     img {
-      width: 90%;
+      width: 100%;
       height: auto;
     }
 
@@ -157,6 +185,12 @@ body {
       font-size: 2.5em;
     }
 
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  %type {
     p {
       font-size: 1em;
     }
