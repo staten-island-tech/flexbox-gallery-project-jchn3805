@@ -18,9 +18,8 @@ body {
 }
 
 .card {
-  width: 22rem;
-  height: 30rem;
-  // padding: 2rem;
+  width: 24rem;
+  height: 32rem;
   margin: 2rem;
   perspective: 1000rem;
   transition: transform 0.5s;
@@ -170,33 +169,25 @@ body {
   color: white;
 }
 
-// @media (max-width: 1550px) {
-//   .toggler {
-//     width: 100%;
-//     height: 100%;
-//   }
+@media (max-width: 1550px) {
+  body {
+    margin: 3rem;
+  }
 
-//   .card {
-//     // padding: 2rem;
-//     margin: 1.5rem;
+  .card {
+    width: 20rem;
+    height: 27rem;
+  }
 
-//     img {
-//       width: 90%;
-//       height: auto;
-//     }
+  .front,
+  .back {
+    img {
+      width: 16rem;
+      height: auto;
+    }
 
-//     h2 {
-//       font-size: 2.4rem;
-//     }
-
-//     p {
-//       font-size: 1.2rem;
-//     }
-//   }
-
-//   %type {
-//     p {
-//       font-size: 0.8rem;
-//     }
-//   }
-// }
+    h2 {
+      font-size: 2.5em;
+    }
+  }
+}
