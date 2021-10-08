@@ -177,6 +177,7 @@ body {
   .card {
     width: 20rem;
     height: 27rem;
+    margin: 1.5rem;
   }
 
   .front,
@@ -188,6 +189,77 @@ body {
 
     h2 {
       font-size: 2.5em;
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  body {
+    margin: 2rem;
+  }
+
+  .card {
+    width: 16rem;
+    height: 22rem;
+    margin: 1.2rem;
+  }
+
+  .front,
+  .back {
+    padding: 1.5rem;
+
+    img {
+      width: 12rem;
+      height: auto;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    %type {
+      font-size: 0.8em;
+      height: 1.5rem;
+      width: 4.2rem;
+    }
+  }
+}
+
+@media (max-width: 965px) {
+  body {
+    margin: 1rem;
+  }
+
+  .card {
+    width: 13rem;
+    height: 18rem;
+    margin: 1rem;
+  }
+
+  .front,
+  .back {
+    padding: 1rem;
+
+    img {
+      width: 10rem;
+      height: auto;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    %type {
+      height: 1.5rem;
+      width: 4.2rem;
     }
   }
 }
