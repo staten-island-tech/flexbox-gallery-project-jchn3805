@@ -230,6 +230,7 @@ body {
   .front,
   .back {
     padding: 1rem;
+    backface-visibility: hidden;
   }
   .front img,
   .back img {

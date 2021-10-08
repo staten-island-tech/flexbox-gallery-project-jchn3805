@@ -243,6 +243,7 @@ body {
   .front,
   .back {
     padding: 1rem;
+    backface-visibility: hidden;
 
     img {
       width: 10rem;
